@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema para Solicitação de Livros - SiSoLi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <h2 class="titulo">Sistema para Solicitação de Livros - SiSoLi</h2>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <main>
+        <section class="container">
+            <h2>
+				Livros
+				<i class="material-icons md-36">local_library</i>
+			</h2>
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Vinculo</th>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Ediçao</th>
+                        <th>ISSN</th>
+                        <th>Ano</th>
+                        <th>Editora</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-livros">
+                    <tr class="livro">
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <section class="container">
+        <nav class="grey lighten-5" class="row">
+            <div class="nav-wrapper container ">
+                <div class="col s12">
+                    <h2 id="titulo-form">
+						Solicitação de Livros
+					</h2>
+                </div>
+            </div>
+        </nav>
+        <i class="material-icons md-36">import_contacts</i>
+
+        <div class="row">
+            <form id="form-livros">
+                <ul class="collection with-header">
+                    <li class="collection-item">
+                        <div>
+                            <label for="vinculo">Vinculo*:</label>
+                            <input id="vinculo" name="vinculo" type="text" placeholder="vinculo com essa instituiçao" class="vinculo">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="titulo">Titulo*:</label>
+                            <input id="titulo" name="titulo" type="text" placeholder="digite o titulo do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="autor">Autor*:</label>
+                            <input id="autor" name="autor" type="text" placeholder="digite o autor do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="ediçao">Ediçao:</label>
+                            <input id="ediçao" type="number" placeholder="digite a ediçao do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="issn">ISSN:</label>
+                            <input id="issn" type="number" placeholder="digite o issn do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="ano">Ano:</label>
+                            <input id="ano" type="number" placeholder="digite o ano do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <div class="grupo">
+                            <label for="editora">Editora:</label>
+                            <input id="editora" type="text" o placeholder="digite a editora do livro" class="campo campo-medio">
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <button id="adicionar-Llivros" class="waves-effect blue accent-4 btn-small" class="botao bto-principal"><i class="material-icons right">add_circle</i>Adicionar</button>
+        <br>
+        <br>
+    </section>
+    <footer class="page-footer  grey darken-3">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by: <a class="white-text text-lighten-3" href="https://ifce.edu.br/">Instituto Federal do
+					Ceará</a>
+                <br> © 2019 Copyright IFCE
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>
